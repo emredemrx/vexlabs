@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remindly - Privacy Policy &amp; Terms of Use | VexLabs</title>
+  <style>
+    :root {
+      --bg: #0f111a;
+      --card: #181b28;
+      --border: #2a2f45;
+      --primary: #7c5cff;
+      --text: #f1f3f9;
+      --muted: #9ba3be;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 32px 16px 64px;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+      padding: 28px 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(124, 92, 255, 0.15);
+      color: #a58fff;
+      border: 1px solid rgba(124, 92, 255, 0.35);
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    h1 { font-size: 28px; margin-bottom: 6px; }
+    .subtitle { color: var(--muted); font-size: 14px; }
+    .lang-switch {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .lang-btn {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 8px 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    .lang-btn.active, .lang-btn:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 28px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 22px;
+      color: #fff;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 {
+      font-size: 16px;
+      color: #b7a4ff;
+      margin-top: 22px;
+      margin-bottom: 8px;
+    }
+    p, li {
+      color: #d5d9e8;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    code {
+      background: rgba(255,255,255,0.07);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 36px;
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">VexLabs • com.vexlabs.remindly</span>
+      <h1>Remindly – Privacy Policy &amp; Terms of Use</h1>
+      <p class="subtitle">Last Updated: November 2026</p>
+      <div class="lang-switch">
+        <button id="btn-en" class="lang-btn active" onclick="setLang('en')">🇬🇧 English</button>
+        <button id="btn-tr" class="lang-btn" onclick="setLang('tr')">🇹🇷 Türkçe</button>
+      </div>
+    </header>
+
+    <!-- ENGLISH SECTION -->
+    <div id="sec-en">
+      <div class="card">
+        <h2>Privacy Policy</h2>
+        <p><strong>Remindly</strong> ("App", Package ID: <code>com.vexlabs.remindly</code>), developed by <strong>VexLabs</strong> ("Developer", "we", "us", or "our"), is built on a strict <strong>Privacy-First, Local-First</strong> architecture. This Privacy Policy explains how your information is handled, stored, and protected when you use our application.</p>
+
+        <h3>1. Zero-Server &amp; 100% Local Data Storage Architecture</h3>
+        <ul>
+          <li>All user-generated content—including reminders, tasks, calendar events, notes, appointments, bill and subscription amounts, payment schedules, custom categories, and local profile preferences (such as display name and avatar image selected from your device)—is stored exclusively on your device's internal SQLite database and local application sandbox.</li>
+          <li>VexLabs operates <strong>NO external backend servers, cloud databases, or telemetry pipelines</strong> that collect, read, or store your personal reminders or financial records. We cannot view, access, or recover your local data.</li>
+        </ul>
+
+        <h3>2. No Data Collection, No Ads &amp; No Third-Party Sharing</h3>
+        <ul>
+          <li>Your personal data and financial reminder records are <strong>NEVER sold, rented, monetized, traded, or disclosed</strong> to advertising networks, data brokers, analytics providers, or any third parties.</li>
+          <li>Remindly contains zero third-party advertising SDKs, behavioral tracking scripts, or cross-app user profiling tools.</li>
+        </ul>
+
+        <h3>3. Google Sign-In &amp; Google Drive Cloud Backup (Optional)</h3>
+        <ul>
+          <li>Remindly offers an optional cloud backup and restore feature using Google Sign-In and the Google Drive API.</li>
+          <li>If you choose to sign in with your Google Account, the App requests access strictly to the restricted <code>drive.appdata</code> (<code>appDataFolder</code>) scope and basic account profile information (email address, display name, and profile picture URL) solely to display your connected account status inside the App.</li>
+          <li><strong>How Backup Data is Stored:</strong> Your backup file is uploaded directly from your device to your personal Google Drive's hidden <code>appDataFolder</code>. Neither VexLabs nor any third party can access, read, or modify files inside your Google Drive.</li>
+          <li><strong>Google API Services User Data Policy (Limited Use Compliance):</strong> Remindly's use and transfer to any other app of information received from Google APIs will adhere to the <em>Google API Services User Data Policy</em>, including the Limited Use requirements. Google user data is used exclusively to provide user-facing backup and restore functionality and is never used for advertising, AI/ML model training, or shared with third parties.</li>
+        </ul>
+
+        <h3>4. Device Permissions &amp; Purpose</h3>
+        <ul>
+          <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used strictly to display scheduled reminder and bill alerts locally on your device.</li>
+          <li><strong>Exact Alarms (SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM):</strong> Ensures time-sensitive reminders trigger at the exact minute configured by you.</li>
+          <li><strong>Boot Completed (RECEIVE_BOOT_COMPLETED):</strong> Automatically reschedules your active local reminders after your device restarts.</li>
+          <li><strong>Battery Optimization Exemption (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS):</strong> Optional permission requested so the operating system does not delay or suppress critical notifications in deep sleep mode.</li>
+          <li><strong>Photos / Media Picker:</strong> Used only when you voluntarily choose a local profile picture; the selected image remains on your device.</li>
+        </ul>
+
+        <h3>5. Data Retention, User Control &amp; Complete Data Deletion</h3>
+        <ul>
+          <li><strong>Local Data Deletion:</strong> You can edit or delete any reminder at any time within the App. Clearing the App's storage or uninstalling Remindly from your device permanently and immediately erases all locally stored SQLite databases, preferences, and profile data.</li>
+          <li><strong>Cloud Backup &amp; Account Deletion:</strong> You can sign out, disconnect your Google Account, or manage your backup directly from <em>Settings &gt; Backup</em> inside the App, or revoke access and delete stored app data at any time via your Google Account Security Settings (<code>myaccount.google.com/permissions</code>) and Google Drive Settings (<em>Settings &gt; Manage Apps &gt; Remindly</em>).</li>
+        </ul>
+
+        <h3>6. Children's Privacy (COPPA / GDPR-K)</h3>
+        <p>Remindly does not knowingly collect, solicit, or store personal information from anyone, including children under the age of 13 (or the applicable age of consent in your jurisdiction).</p>
+
+        <h3>7. Your Privacy Rights (GDPR, KVKK, CCPA)</h3>
+        <p>Because all data is stored locally on your device and optionally in your own Google Drive account, you retain 100% ownership, possession, access, portability (JSON export/backup), and deletion control over your data at all times.</p>
+
+        <h3>8. Changes to This Policy &amp; Contact Us</h3>
+        <p>We may update this Privacy Policy periodically to reflect technical or regulatory changes. The latest version is always accessible within the App under <em>Settings &gt; About &gt; Privacy Policy</em> and on this page. For any privacy inquiries, please contact VexLabs via the support email listed on our official Google Play Store developer page.</p>
+      </div>
+
+      <div class="card">
+        <h2>Terms of Use</h2>
+        <h3>1. Scope of Service</h3>
+        <p>Remindly ("App", Package ID: <code>com.vexlabs.remindly</code>), developed by VexLabs, is a personal productivity, calendar, and bill/subscription reminder assistant.</p>
+
+        <h3>2. Local Storage &amp; User Responsibility</h3>
+        <p>Because Remindly operates on a local-first architecture where data resides directly on your device, you are solely responsible for maintaining the security of your device and performing regular backups. VexLabs is not liable for data loss caused by device damage, loss, reset, or uninstallation.</p>
+
+        <h3>3. Notifications &amp; Operating System Constraints</h3>
+        <p>The App is provided "AS IS" without warranties of uninterrupted alarm delivery. Timely delivery depends on Android/iOS background policies, battery optimization rules, and granted permissions.</p>
+
+        <h3>4. Financial &amp; Payment Tracking Disclaimer</h3>
+        <p>Bill trackers, subscription summaries, 6-month projections, and currency conversion approximations are provided strictly for personal informational convenience. Remindly is not a bank, payment processor, or financial advisor. VexLabs is not liable for late fees, penalties, or damages resulting from missed alerts or currency estimates.</p>
+      </div>
+    </div>
+
+    <!-- TURKISH SECTION -->
+    <div id="sec-tr" class="hidden">
+      <div class="card">
+        <h2>Gizlilik Politikası</h2>
+        <p><strong>VexLabs</strong> ("Geliştirici", "biz") tarafından geliştirilen <strong>Remindly</strong> ("Uygulama", Paket Adı: <code>com.vexlabs.remindly</code>), tamamen <strong>"Önce Gizlilik ve %100 Yerel Veri" (Privacy-First &amp; Local-First)</strong> mimarisi üzerine inşa edilmiştir. İşbu Gizlilik Politikası; KVKK, GDPR ve Google Play Kullanıcı Verileri Politikası kapsamında verilerinizin nasıl işlendiğini, saklandığını ve korunduğunu açıklar.</p>
+
+        <h3>1. Sıfır Sunucu &amp; %100 Yerel Veri Saklama Mimarisi</h3>
+        <ul>
+          <li>Uygulama içerisinde oluşturduğunuz tüm hatırlatıcılar, görevler, takvim etkinlikleri, kişisel notlar, fatura ve abonelik tutarları, ödeme planları, özel kategoriler ve yerel profil tercihleriniz (cihazınızdan seçtiğiniz profil fotoğrafı ve görünen adınız dahil) yalnızca cihazınızın dahili hafızasındaki yerel SQLite veri tabanında saklanır.</li>
+          <li>VexLabs'in kişisel hatırlatıcılarınızı veya finansal kayıtlarınızı toplayan, okuyan veya depolayan <strong>harici bir merkezi sunucusu (backend) veya bulut veri tabanı YOKTUR</strong>. Yerel verilerinizi görmemiz veya erişmemiz teknik olarak mümkün değildir.</li>
+        </ul>
+
+        <h3>2. Veri Toplanmaması, Reklamsız Yapı ve Üçüncü Taraflarla Paylaşmama</h3>
+        <ul>
+          <li>Kişisel bilgileriniz ve finansal hatırlatma kayıtlarınız hiçbir koşulda reklam ağlarına, veri komisyoncularına, analiz şirketlerine veya üçüncü taraflara <strong>SATILMAZ, KİRALANMAZ, TİCARİLEŞTİRİLMEZ veya AKTARILMAZ</strong>.</li>
+          <li>Uygulama içerisinde reklam SDK'sı, kullanıcı davranışlarını izleyen (tracking) veya cihazlar arası profilleme yapan herhangi bir üçüncü taraf yazılım bulunmamaktadır.</li>
+        </ul>
+
+        <h3>3. Google ile Giriş ve Google Drive Bulut Yedekleme (İsteğe Bağlı)</h3>
+        <ul>
+          <li>Remindly, verilerinizi yedekleyebilmeniz için isteğe bağlı Google ile Giriş (Google Sign-In) ve Google Drive yedekleme özelliği sunar.</li>
+          <li>Google hesabınızla giriş yapmayı seçtiğinizde Uygulama; yalnızca kendi oluşturduğu yedek dosyasına erişebilen kısıtlı <code>drive.appdata</code> (<code>appDataFolder</code>) iznini ve uygulama içinde hangi hesabın bağlı olduğunu göstermek amacıyla temel profil bilgilerinizi (e-posta adresi, ad ve profil resmi) talep eder.</li>
+          <li><strong>Yedeklerin Saklanması:</strong> Yedek dosyanız doğrudan cihazınızdan kendi kişisel Google Drive hesabınızdaki gizli <code>appDataFolder</code> klasörüne yüklenir. Ne VexLabs ne de herhangi bir üçüncü taraf Google Drive hesabınızdaki dosyalara erişebilir veya bunları okuyabilir.</li>
+          <li><strong>Google API Hizmetleri Kullanıcı Verileri Politikası (Limited Use Uyumu):</strong> Remindly'nin Google API'lerinden alınan bilgileri kullanımı ve aktarımı, Sınırlı Kullanım (Limited Use) gereksinimleri de dahil olmak üzere <em>Google API Hizmetleri Kullanıcı Verileri Politikası</em>'na tam uyum sağlar. Google kullanıcı verileri yalnızca kullanıcının talep ettiği yedekleme ve geri yükleme işlevini sunmak için kullanılır; reklamcılık, yapay zeka model eğitimi veya üçüncü taraf paylaşımı için asla kullanılmaz.</li>
+        </ul>
+
+        <h3>4. Cihaz İzinleri ve Kullanım Amaçları</h3>
+        <ul>
+          <li><strong>Bildirim İzni (POST_NOTIFICATIONS):</strong> Zamanı gelen hatırlatıcı ve fatura uyarılarını cihazınızda yerel bildirim olarak göstermek için kullanılır.</li>
+          <li><strong>Tam Zamanlı Alarm İzni (SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM):</strong> Hatırlatıcıların pil tasarrufu modunda bile tam belirlediğiniz dakikada çalmasını sağlar.</li>
+          <li><strong>Yeniden Başlatma Algılama (RECEIVE_BOOT_COMPLETED):</strong> Cihazınız yeniden başlatıldıktan sonra aktif alarmlarınızın otomatik olarak yeniden kurulmasını sağlar.</li>
+          <li><strong>Pil Optimizasyonu İstisnası (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS):</strong> İşletim sisteminin derin uyku modunda kritik bildirimlerinizi engellememesi için isteğe bağlı olarak talep edilir.</li>
+          <li><strong>Fotoğraf / Medya Seçici:</strong> Yalnızca profil fotoğrafı seçmek istediğinizde kullanılır; seçilen görsel cihaz dışına çıkmaz.</li>
+        </ul>
+
+        <h3>5. Veri Saklama Süresi, Kullanıcı Kontrolü ve Verilerin Tamamen Silinmesi</h3>
+        <ul>
+          <li><strong>Yerel Verilerin Silinmesi:</strong> Uygulama içindeki tüm kayıtları dilediğiniz an düzenleyebilir veya silebilirsiniz. Uygulama verilerini temizlediğinizde veya Remindly'yi cihazınızdan kaldırdığınızda (uninstall), cihazdaki tüm SQLite veri tabanı ve yerel kayıtlar kalıcı olarak silinir.</li>
+          <li><strong>Bulut Yedeklerinin ve Hesap Bağlantısının Silinmesi:</strong> <em>Ayarlar &gt; Yedekleme</em> menüsünden Google hesabınızın bağlantısını kesebilir veya Google Hesap Güvenliği (<code>myaccount.google.com/permissions</code>) ve Google Drive (<em>Ayarlar &gt; Uygulamaları Yönet &gt; Remindly</em>) bölümünden uygulama erişimini ve yedek verilerini dilediğiniz an tamamen silebilirsiniz.</li>
+        </ul>
+
+        <h3>6. Çocukların Gizliliği</h3>
+        <p>Remindly, 13 yaşın altındaki çocuklar da dahil olmak üzere hiçbir kullanıcıdan bilerek kişisel veri toplamaz veya sunucuda işlemez.</p>
+
+        <h3>7. KVKK ve GDPR Kapsamındaki Haklarınız</h3>
+        <p>Tüm verileriniz doğrudan kendi cihazınızda ve isteğe bağlı olarak kendi kişisel Google Drive hesabınızda tutulduğundan; verileriniz üzerinde %100 mülkiyet, erişim, dışa aktarma (JSON yedekleme) ve imha etme kontrolü tamamen sizin elinizdedir.</p>
+
+        <h3>8. Politika Güncellemeleri ve İletişim</h3>
+        <p>Bu Gizlilik Politikası yasal veya teknik gereksinimlere göre güncellenebilir. En güncel metin her zaman Uygulama içi <em>Ayarlar &gt; Hakkında &gt; Gizlilik Politikası</em> bölümünde ve bu sayfada yer alır. Sorularınız için Google Play Store geliştirici sayfasındaki resmi VexLabs destek e-posta adresinden bize ulaşabilirsiniz.</p>
+      </div>
+
+      <div class="card">
+        <h2>Kullanım Koşulları</h2>
+        <h3>1. Hizmetin Kapsamı</h3>
+        <p>VexLabs tarafından geliştirilen Remindly (<code>com.vexlabs.remindly</code>), günlük görevlerinizi, randevularınızı, faturalarınızı ve aboneliklerinizi düzenlemenize yardımcı olan kişisel bir takvim ve hatırlatıcı asistanıdır.</p>
+
+        <h3>2. Yerel Veri Mimarisi ve Sorumluluk</h3>
+        <p>Veriler cihazınızda yerel olarak saklandığından, cihaz güvenliği ve düzenli yedekleme kullanıcının sorumluluğundadır. Cihaz arızası, sıfırlanması veya yedek alınmaması kaynaklı veri kayıplarından VexLabs sorumlu tutulamaz.</p>
+
+        <h3>3. Bildirimler ve Sistem Kısıtlamaları</h3>
+        <p>Uygulama "OLDUĞU GİBİ" sunulmaktadır. Cihaz üreticilerinin pil kısıtlamaları veya kapatılan bildirim izinleri nedeniyle geciken bildirimlerden geliştirici sorumlu değildir.</p>
+
+        <h3>4. Finansal Sorumluluk Reddi</h3>
+        <p>Fatura/abonelik takibi, 6 aylık projeksiyonlar ve döviz kuru karşılıkları yalnızca kişisel bilgilendirme amaçlıdır. Remindly bir banka veya finansal danışman değildir; kaçırılan ödemelerden veya kur farklarından doğabilecek zararlardan VexLabs sorumlu tutulamaz.</p>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2026 VexLabs. All rights reserved. • Remindly (com.vexlabs.remindly)
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.getElementById('sec-en').classList.toggle('hidden', lang !== 'en');
+      document.getElementById('sec-tr').classList.toggle('hidden', lang !== 'tr');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+    }
+  </script>
+</body>
+</html>
